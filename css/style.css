@@ -1,0 +1,21 @@
+/*
+	COLORS
+ 
+	Dark Blue 		#222438
+	Medium Blue		#69697A
+	Light Blue	 	#C5C3DE
+	Yellow			#FFB000
+	Red				#D92B00
+	
+*/
+
+body {
+	background: #fff;
+	font-size: 120px;
+	text-align: center;
+	padding-bottom: 500%;
+}
+
+#title-line3 .char3 {
+	color: red;
+}
