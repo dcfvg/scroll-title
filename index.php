@@ -27,6 +27,8 @@ $Extra = new ParsedownExtra();
 			</fieldset>
 		</form>
 	<?php else:?>
+
+	<h4>scroll down !</h4>
 <hr>
 		<h1 class="message">ARTISTIC lab</h1>
 		<hr>
@@ -48,7 +50,7 @@ $Extra = new ParsedownExtra();
 			$('.message').lettering().each(function() {
 
 				var parent = $( this );
-				controller.addTween(parent, TweenMax.to(parent, 0, {css:{visibility: "visible"}}));
+				controller.addTween(parent, TweenMax.to(parent, 0.01, {css:{visibility: "visible"}}));
 
 				$( this ).find('span').each(function() {
 					controller.addTween(
