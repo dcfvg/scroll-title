@@ -6163,17 +6163,3 @@ button.close {
     display: none !important;
   }
 }
-.container-fluid {
-  margin-bottom: 600%;
-}
-h1 {
-  font-size: 10em;
-  text-align: center;
-}
-.message {
-  margin-top: 70%;
-  margin-bottom: 70%;
-}
-.message span {
-  position: relative;
-}
