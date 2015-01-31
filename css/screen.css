@@ -6171,7 +6171,8 @@ h1 {
   text-align: center;
 }
 .message {
-  margin-bottom: 50%;
+  margin-bottom: 100%;
+  visibility: hidden;
 }
 .message span {
   position: relative;

@@ -1,11 +1,9 @@
 <?php 
 
-
 include("lib/parsedown.php");
 include("lib/parsedownExtra.php");
 
 $Extra = new ParsedownExtra();
-
 
 ?>
 
@@ -30,11 +28,11 @@ $Extra = new ParsedownExtra();
 		</form>
 	<?php else:?>
 <hr>
-		<h1 class="message">artistic lab</h1>
+		<h1 class="message">ARTISTIC lab</h1>
 		<hr>
 		<h1 class="message">Contre - Courant Tokyo</h1>
 		<hr>
-		<h1 class="message">CCMMP CCMMP CCMMP CCMMP</h1>
+		<h1 class="message">CCMMP CCMMP CCMMP CCMMP CCMMP CCMMP </h1>
 		<hr>
 	<?php endif ?>
 
@@ -46,26 +44,21 @@ $Extra = new ParsedownExtra();
 	<script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
 	<script>
 		$(document).ready(function() {
-			var controller = $.superscrollorama({
-				triggerAtCenter: true
-			});
+			var controller = $.superscrollorama();
 			$('.message').lettering().each(function() {
 
 				var parent = $( this );
+				controller.addTween(parent, TweenMax.to(parent, 0, {css:{visibility: "visible"}}));
 
 				$( this ).find('span').each(function() {
 					controller.addTween(
 							parent,
-							TweenMax.from(
-							$( this ), 
-							1, 
-							{css:{top:+rand(-800,-600)+'px'}}),
-							200
+							TweenMax.from( $( this ), 3, 
+								{css:{top:+rand(-1300,-600)+'px'}}
+							),
+							300
 						);
-
-					controller.addTween(parent, TweenMax.from($( this ), .1, {css:{opacity: 0}, immediateRender:true}), 0);
 				})
-	
 			});
 			function rand(min,max)
 			{
