@@ -6164,15 +6164,14 @@ button.close {
   }
 }
 .container-fluid {
-  margin-bottom: 600%;
+  margin-top: 80%;
 }
 h1 {
   font-size: 10em;
   text-align: center;
 }
 .message {
-  margin-top: 70%;
-  margin-bottom: 70%;
+  margin-bottom: 50%;
 }
 .message span {
   position: relative;

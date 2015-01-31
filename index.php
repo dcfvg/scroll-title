@@ -46,7 +46,9 @@ $Extra = new ParsedownExtra();
 	<script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
 	<script>
 		$(document).ready(function() {
-			var controller = $.superscrollorama();
+			var controller = $.superscrollorama({
+				triggerAtCenter: true
+			});
 			$('.message').lettering().each(function() {
 
 				var parent = $( this );
@@ -54,12 +56,14 @@ $Extra = new ParsedownExtra();
 				$( this ).find('span').each(function() {
 					controller.addTween(
 							parent,
-							TweenMax.from($( this ), 
+							TweenMax.from(
+							$( this ), 
 							1, 
-							{css:{top:+rand(-1500,-1000)+'px'}}), 
+							{css:{top:+rand(-800,-600)+'px'}}),
 							200
 						);
 
+					controller.addTween(parent, TweenMax.from($( this ), .1, {css:{opacity: 0}, immediateRender:true}), 0);
 				})
 	
 			});
