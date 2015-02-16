@@ -1,3 +1,4 @@
+@import 'museo/MyFontsWebfontsKit.css';
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6163,17 +6164,29 @@ button.close {
     display: none !important;
   }
 }
+body {
+  font-family: "MuseoSans-700";
+}
 .container-fluid {
   margin-top: 40%;
 }
 h1 {
   font-size: 10em;
   text-align: center;
+  height: 200%;
 }
 .message {
   margin-bottom: 100%;
-  visibility: hidden;
+  opacity: 0;
 }
 .message span {
   position: relative;
+  z-index: 1;
+}
+img {
+  z-index: 1000;
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
 }

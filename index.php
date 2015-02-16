@@ -31,11 +31,8 @@ $Extra = new ParsedownExtra();
 	<h4>scroll down !</h4>
 <hr>
 		<h1 class="message">ARTISTIC lab</h1>
-		<hr>
 		<h1 class="message">Contre - Courant Tokyo</h1>
-		<hr>
 		<h1 class="message">CCMMP CCMMP CCMMP CCMMP CCMMP CCMMP </h1>
-		<hr>
 	<?php endif ?>
 
 
@@ -50,13 +47,13 @@ $Extra = new ParsedownExtra();
 			$('.message').lettering().each(function() {
 
 				var parent = $( this );
-				controller.addTween(parent, TweenMax.to(parent, 0.01, {css:{visibility: "visible"}}));
+				controller.addTween(parent, TweenMax.to(parent, 0.01, {css:{opacity: 1}}));
 
 				$( this ).find('span').each(function() {
 					controller.addTween(
 							parent,
-							TweenMax.from( $( this ), 3, 
-								{css:{top:+rand(-1300,-600)+'px'}}
+							TweenMax.from( $( this ), 300, 
+								{css:{top:+rand(-1500,-1000)+'px'}}
 							),
 							300
 						);
