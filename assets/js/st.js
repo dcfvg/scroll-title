@@ -41,9 +41,12 @@ $(document).ready(function($) {
 
 	$('#messages h1 em, #messages h2 em').lettering('words').each(setAnim);
 	$('#messages h1 strong, #messages h2 strong').lettering().each(setAnim);
+
 	$('#messages p em').lettering('lines').each(setAnim);
 	$('#messages p strong').lettering('words').each(setAnim);
+	
 
+	$('#messages pre code').lettering().each(setAnim);	
 
 
 })

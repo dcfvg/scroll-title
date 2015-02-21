@@ -6193,3 +6193,9 @@ strong {
   font-weight: normal;
   font-style: normal;
 }
+pre,
+code {
+  background: none;
+  border: none;
+  color: black;
+}
