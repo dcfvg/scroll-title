@@ -24,6 +24,7 @@ $Extra = new ParsedownExtra();
 	<script type="text/javascript" src="assets/js/TweenMax.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.scrollmagic.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.scrollmagic.debug.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script>
 	<script type="text/javascript" src="assets/js/st.js"></script>
 </body>
 </html>

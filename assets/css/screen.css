@@ -1,4 +1,3 @@
-@import '../fonts/museo/MyFontsWebfontsKit.css';
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -6167,8 +6166,9 @@ button.close {
 body,
 html,
 .container {
-  font-family: "MuseoSans-700";
   height: 100%;
+  background-color: black;
+  color: white;
 }
 h1 {
   font-size: 120px;

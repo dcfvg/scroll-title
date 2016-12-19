@@ -25,7 +25,7 @@ $(document).ready(function($) {
 			
 			$letter.addClass("animated");
 			scene.setTween(tween).addTo(controller)
-			//scene.addIndicators();
+			scene.addIndicators();
 
 		})
 	}
@@ -48,5 +48,6 @@ $(document).ready(function($) {
 
 	$('#messages pre code').lettering().each(setAnim);	
 
+	 //$("body").scrollTo('100%', *60*1000);
 
 })
